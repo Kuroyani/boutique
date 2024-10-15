@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coins - Bronx Revival</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .coin-container {
+            display: flex;
+            justify-content: center; /* Centrer les éléments */
+            flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si l'espace est insuffisant */
+            padding: 20px;
+            gap: 20px; /* Ajoute de l'espace entre les éléments */
+        }
+
+        .coin {
+            background-color: #333; /* Gris foncé */
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            width: 220px;
+            transition: transform 0.2s;
+        }
+
+        .coin:hover {
+            transform: scale(1.05); /* Agrandit l'élément au survol */
+        }
+
+        .coin img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .btn {
+            background-color: #00bfff; /* Bleu clair */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #007acc; /* Bleu plus foncé */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Bronx Revival Boutique</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="coins.html">Coins</a></li>
+                <li><a href="vip.html">VIP</a></li>
+                <li><a href="achat.html">Achat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="coins" class="hero">
+        <h1>Achetez vos Coins</h1>
+        <p>Découvrez nos différentes options de coins pour améliorer votre expérience dans Bronx Revival !</p>
+    </section>
+
+    <div class="coin-container">
+        <div class="coin">
+            <img src="coin_bronze.png" alt="Coin Bronze">
+            <h3>Coin Bronze</h3>
+            <p>Prix: 4,99€</p>
+            <a href="https://discord.gg/bronxrevival" class="btn">Acheter</a>
+        </div>
+        <div class="coin">
+            <img src="coin_argent.png" alt="Coin Argent">
+            <h3>Coin Argent</h3>
+            <p>Prix: 9,99€</p>
+            <a href="https://discord.gg/bronxrevival" class="btn">Acheter</a>
+        </div>
+        <div class="coin">
+            <img src="coin_or.png" alt="Coin Or">
+            <h3>Coin Or</h3>
+            <p>Prix: 20,99€</p>
+            <a href="https://discord.gg/bronxrevival" class="btn">Acheter</a>
+        </div>
+    </div>
+    
+    
+
+    <footer>
+        <p>&copy; 2024 Bronx Revival. Tous droits réservés.</p>
+        <p>Pour les paiements, veuillez utiliser notre <a href="https://discord.gg/bronxrevival" style="color: #00bfff;">Discord</a>.</p>
+    </footer>
+
+    <script>
+        function ajouterAuPanier(nomProduit, prix) {
+            alert(nomProduit + " a été ajouté au panier pour " + prix + " coins !");
+            // Ici, vous pourriez ajouter une logique pour gérer le panier
+        }
+    </script>
+</body>
+</html>
